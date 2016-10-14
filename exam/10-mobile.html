@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src='js/jquery-1.12.4.min.js'></script>
+    <script src='js/jquery.mobile-1.4.5.min.js'></script>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" media="screen" title="no title" charset="utf-8">
+    <style media="screen">
+      #head{
+        background-color: #c00;
+        color: white;
+
+      }
+      #head h1{
+        display: inline-block;
+        margin-left: 10px;
+      }
+
+    </style>
+    <script type="text/javascript">
+      $(function(){
+        $("#tabs").tabs()
+      })
+    </script>
+
+
+
+  </head>
+  <body>
+    <div id='head' data-role='header'><h1>今日头条</h1>
+      <input type="button" name="name" value="O">
+      <input type="text" name="name" value="搜你想搜的"></div>
+      <div id="tabs">
+      <ul>
+        <li><a href="#hello1">推荐</a></li>
+        <li><a href="#hello2">热点</a></li>
+        <li><a href="#hello3">本地</a></li>
+        <li><a href="#hello4">视频</a></li>
+        <li><a href="#hello5">社会</a></li>
+      </ul>
+      <div id="hello1">11111111111111</div>
+      <div id="hello2">22222222222222</div>
+      <div id="hello3">33333333333333</div>
+      <div id="hello4">444444444444444</div>
+      <div id="hello5">555555555555555</div>
+
+    </div>
+
+  </body>
+</html>

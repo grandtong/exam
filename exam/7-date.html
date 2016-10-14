@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>datepicker()</title>
+    <script src='js/jquery-3.1.1.min.js'></script>
+    <script src='js/jquery-ui.min.js'></script>
+    <link rel="stylesheet" href="css/jquery-ui.min.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript">
+      $(function(){
+        $('#date').datepicker({
+          changeMonth:true,
+          changeYear:true,
+          yearRange:'-1:+2',
+          showOtherMonths: true
+        });
+      })
+    </script>
+  </head>
+  <body>
+    日期:<input id='date' type="text" name="name" value="">
+
+  </body>
+</html>

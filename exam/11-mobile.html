@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src='js/jquery-1.12.4.min.js'></script>
+  <script src='js/jquery.mobile-1.4.5.min.js'></script>
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" media="screen" title="no title" charset="utf-8">
+  <style media="screen">
+    #page2{
+      position: relative;
+    }
+    #right{
+      position: absolute;
+      right: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div data-role='page'id="page1">
+    <div data-role="header"><h1>标题</h1></div>
+    <div role="main">
+      <p>内容</p>
+    </div>
+    <div data-role="footer">
+      <a href="#page2" data-role='button' data-rel='dialog' data-transition="fade">cancel</a>
+    </div>
+  </div>
+  <div data-role='page' id="page2">
+    <div data-role="header"><h1>标题</h1></div>
+    <div role="main">
+      <p>内容</p>
+    </div>
+    <div data-role="footer">
+      <a href="#page1" data-role='button' data-rel='dialog'  data-transition="fade">确定</a>
+      <a id='right' href="#page1" data-role='button' data-rel='dialog' data-transition="fade">cancel</a>
+    </div>
+  </div>
+</body>
+</html>
